@@ -1,4 +1,6 @@
 import random
+import os
+import time
 
 player = int(input('Qual você escolhe?\n'
                    '1-Pedra, 2-Papel, 3-Tesoura\n'
@@ -13,7 +15,8 @@ vitoriaCase = ["A vitória é uma necessidade, não uma opção. 🏆",
                "Sempre é tempo de recomeçar. Creia e a vitória será sua!",
                "A vitória é a recompensa da perseverança.",
                "A vitória não é daqueles que nunca falharam, mas dos que insistem em lutar.🤩",
-               "Grandes vitórias são o resultado de dedicação, esforço e muito trabalho duro. 💪"]
+               "Grandes vitórias são o resultado de dedicação, esforço e muito trabalho duro. 💪",
+               'Mas é isso kkkkkkkkkk, eu consegui ganhar velho! Finalmente! Eu acho?']
 derrotaCase = ["Eu sei que má notícia gosta de companhia, mas as minhas andam de mutirão.",
                "2. Na mala da vida, eu sou o xampu que abre a tampa e sai sujando e estragando tudo.",
                "3. De longe você parecia feio, de perto você parece que está de longe.",
@@ -67,32 +70,146 @@ derrotaCase = ["Eu sei que má notícia gosta de companhia, mas as minhas andam 
                "51. Errar uma vez é humano. Repetir o erro só eu mesmo.",
                "52. Na viagem da vida, meu GPS está quebrado, estou sem co-piloto e o carro bem que precisa de uma revisão."]
 if player == jogo:
+    time.sleep(0.5)
+    print('JO')
+    time.sleep(1)
+    print('KEN')
+    time.sleep(1)
+    print('PO!!!')
+    time.sleep(1)
     print('Empatamos!')
+    time.sleep(1)
+    pergunta = int(input('Quer jogar de novo?(1-Sim/2-Não)\nR: '))
+    if pergunta == 1:
+        time.sleep(1)
+        os.system('cls')
+    elif pergunta == 2:
+        time.sleep(1)
+        print('Tudo bem, obrigado por jogar!')
+    else:
+        time.sleep(1)
+        print('Entrada inválida!')
 elif player == 1 and jogo == 3:
+    time.sleep(0.5)
+    print('JO')
+    time.sleep(1)
+    print('KEN')
+    time.sleep(1)
+    print('PO!!!')
+    time.sleep(1)
     print(f'Minha jogada: {jogo}')
+    time.sleep(1)
     print('Ahhhh não, eu perdi! Hahahhahaha')
+    time.sleep(1)
+    pergunta = int(input('Quer jogar de novo?(1-Sim/2-Não)\nR: '))
+    if pergunta == 1:
+        time.sleep(1)
+        os.system('cls')
+        print('Tudo bem, obrigado por jogar!')
+    else:
+        time.sleep(1)
+        print('Entrada inválida!')
 elif player == 1 and jogo == 2:
+    time.sleep(0.5)
+    print('JO')
+    time.sleep(1)
+    print('KEN')
+    time.sleep(1)
+    print('PO!!!')
+    time.sleep(1)
     print(f'Minha jogada é: {jogo}')
+    time.sleep(1)
     print(f'Caramba! KKKkkkk\n...{random.choice(vitoriaCase)}...')
+    time.sleep(1)
     print('Mas é isso kkkkkkkkkk, eu consegui ganhar velho! Finalmente! Eu acho?')
+    time.sleep(1)
+    pergunta = int(input('Quer jogar de novo?(1-Sim/2-Não)\nR: '))
+    if pergunta == 1:
+        os.system('cls')
+    elif pergunta == 2:
+        print('Tudo bem, obrigado por jogar!')
+    else:
+        print('Entrada inválida!')
 elif player == 2 and jogo == 1:
+    time.sleep(0.5)
+    print('JO')
+    time.sleep(1)
+    print('KEN')
+    time.sleep(1)
+    print('PO!!!')
+    time.sleep(1)
     print('Hahhahaha! Pedra ganha de papel! Boa!')
+    time.sleep(1)
+    pergunta = int(input('Quer jogar de novo?(1-Sim/2-Não)\nR: '))
+    if pergunta == 1:
+        time.sleep(1)
+        os.system('cls')
+    elif pergunta == 2:
+        time.sleep(1)
+        print('Tudo bem, obrigado por jogar!')
+    else:
+        time.sleep(1)
+        print('Entrada inválida!')
 elif player == 2 and jogo == 3:
+    time.sleep(0.5)
+    print('JO')
+    time.sleep(1)
+    print('KEN')
+    time.sleep(1)
+    print('PO!!!')
+    time.sleep(1)
     print(f'{random.choice(vitoriaCase)}')
+    pergunta = int(input('Quer jogar de novo?(1-Sim/2-Não)\nR: '))
+    if pergunta == 1:
+        time.sleep(1)
+        os.system('cls')
+    elif pergunta == 2:
+        time.sleep(1)
+        print('Tudo bem, obrigado por jogar!')
+    else:
+        time.sleep(1)
+        print('Entrada inválida!')
 elif player == 3 and jogo == 2:
-    print('Você lançou tesoura!')
+    time.sleep(0.5)
+    print('JO')
+    time.sleep(1)
+    print('KEN')
+    time.sleep(1)
+    print('PO!!!')
+    time.sleep(1)
+    print(f'{random.choice(derrotaCase)}')
+    pergunta = int(input('Quer jogar de novo?(1-Sim/2-Não)\nR: '))
+    if pergunta == 1:
+        time.sleep(1)
+        os.system('cls')
+    elif pergunta == 2:
+        time.sleep(1)
+        print('Tudo bem, obrigado por jogar!')
+    else:
+        time.sleep(1)
+        print('Entrada inválida!')
 elif player == 3 and jogo == 1:
-    print()
-else:
-    while True:
-
-# pedra, papel, tesoura
-
-# pedra > tesoura, pedra < papel
-# papel > pedra, papel < tesoura
-# tesoura > papel, tesoura < pedra
-
-
+    time.sleep(0.5)
+    print('JO')
+    time.sleep(1)
+    print('KEN')
+    time.sleep(1)
+    print('PO!!!')
+    time.sleep(1)
+    print(f'{random.choice(vitoriaCase)}')
+    pergunta = int(input('Quer jogar de novo?(1-Sim/2-Não)\nR: '))
+    if pergunta == 1:
+        time.sleep(1)
+        os.system('cls')
+    elif pergunta == 2:
+        print('Tudo bem, obrigado por jogar!')
+    else:
+        print('Entrada inválida!')
+        time.sleep(1)
+    print('ERRO! O programa está na fase beta!')
+# pedra 1
+# papel 2
+# tesoura 3
 """player = int(input('Qual você escolhe?\n'
 '1-Pedra, 2-Papel, 3-Tesoura\n'
 'Eu vou jogar: '))
