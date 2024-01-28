@@ -210,17 +210,3 @@ elif player == 3 and jogo == 1:
 # pedra 1
 # papel 2
 # tesoura 3
-"""player = int(input('Qual você escolhe?\n'
-'1-Pedra, 2-Papel, 3-Tesoura\n'
-'Eu vou jogar: '))
-jogo = random.randint(1, 3)
-if player == jogo:
-    print('Empatamos!')
-elif player == 1 and jogo == 3:
-    print()
-elif player == 2:
-    print('Você lançou papel!')
-
-elif player == 3:
-    print('Você lançou tesoura!')
-"""
